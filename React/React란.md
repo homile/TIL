@@ -1,8 +1,9 @@
-<h2>React</h2>
+<h1>React</h1>
 <p>
 React는 페이스북(現 meta)의 UI(User Interface)를 더 잘 만들기위해 </br>
 페이스북에서 만든 자바스크립트 UI라이브러리이다.</br>
-   <ul>Component: 사용자가 정의한 태그
+   <h3>Component: 사용자가 정의한 태그</h3>
+   <ul>
       <li>가독성을 획기적으로 높일 수 있다.</li>
       <li>재사용성이 높아진다.</li>
       <li>버그를 수정하거나 개선이 필요할 때 내용을 바꾸면 
