@@ -56,7 +56,7 @@
 <pre>
    <code>
       <sapn>function Welcome(props) {</span>
-         return Hello, {props.name};
+         <span>return <h1>Hello, {props.name}</h1>;</span>
       }
    </code>
 </pre>
