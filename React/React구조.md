@@ -25,4 +25,5 @@
       <li>npx serve -s build: build 파일로 서버를 실행한다.</li>
       <li>개발자가 사용하는 파일과 build 파일의 배포시 차이점은 resources를 줄여준다.</li>
    </ul>
+   
 </p>
