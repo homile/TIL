@@ -14,23 +14,31 @@
    </ul>
 
    <h3>Component 기본 구조</h3>
-      function Welcome(props) {
-         return <h1>Hello, {props.name}</h1>;
-      }
-
    <ul>
       <li>함수형 컴포넌트</li>
-      <li>클래스형 컴포넌트</li>
-      <pre><code></code></pre>
-      ```
-      class Welcome extends React.Component {
-         render() {
-            return <h1>Hello, {this.props.name}</h1>;
-         }
-      }
-      ```
+      <!-- `(백틱)을 사용하여 코드블록시 한줄을 띄고 사용한다.
+      또한, Ctrl + Shift + v를 사용하여 md 미리보기가 가능하다.
+       -->
+
+   ```javascript
+   function Welcome(props) {
+      return <h1>Hello, {props.name}</h1>;
+   }
+   ```
+   
+   <li>클래스형 컴포넌트</li>
+   
+   ```javascript
+   class Welcome extends React.Component {
+      render() {
+         return <h1>Hello, {this.props.name}</h1>;
+      }  
+   }
+   ```
    </ul>
-      
+
+
+
    <h3>Component 합성</h3>
    <ul>
       <li>자신의 출력에 다른 컴포넌트를 참조할 수 있다.</li>
@@ -45,12 +53,6 @@
       <li>UI가 여러 번 사용되거나(Button, Panel, Avatar),<br> 
       UI 일부가 자체적으로 복잡한 경우(App, FeedStory, COmment)에는 별도의 컴포넌트를 만드는 게 좋다.</li>
    </ul>
-
-   ```javascript
-   function test() {
-      console.log("look ma’, no spaces");
-   }
-   ```
 
    <h3>Props: 데이터</h3>
    <ul>
