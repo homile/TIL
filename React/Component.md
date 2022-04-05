@@ -54,7 +54,9 @@
    </ul>
 </p>
 <pre>
-   function Welcome(props) {
-      return Hello, {props.name};
-   }
+   <code>
+      function Welcome(props) {
+         return Hello, {props.name};
+      }
+   </code>
 </pre>
