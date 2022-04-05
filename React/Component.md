@@ -14,12 +14,21 @@
    </ul>
 
    <h3>Component 기본 구조</h3>
-   ```javascript function Welcome(props) {
+      function Welcome(props) {
          return <h1>Hello, {props.name}</h1>;
-      }```
+      }
+
    <ul>
       <li>함수형 컴포넌트</li>
+      <pre>
+         <code>
+         function Welcome(props) {
+            return <h1>Hello, {props.name}</h1>;
+         }
+         </code>
+      </pre>
       <li>클래스형 컴포넌트</li>
+      <pre><code></code></pre>
       ```
       class Welcome extends React.Component {
          render() {
