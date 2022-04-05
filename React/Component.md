@@ -20,10 +20,8 @@
 
    <ul>
       <li>함수형 컴포넌트</li>
-      <pre>function Welcome(props) {</pre>
-            <pre>return '<h1>'Hello, {props.name}'</h1>';</pre>
-         <pre>}</pre>
       <li>클래스형 컴포넌트</li>
+      <pre><code></code></pre>
       ```
       class Welcome extends React.Component {
          render() {
@@ -55,3 +53,9 @@
       <li>React 컴포넌트는 자신의 props를 다룰 때 반드시 순수 함수처럼 동작해야 한다.</li>
    </ul>
 </p>
+
+   <pre>
+      function Welcome(props) {
+         return <h1>Hello, {props.name}</h1>;
+      }
+   </pre>
