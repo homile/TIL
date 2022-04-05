@@ -14,11 +14,9 @@
    </ul>
 
    <h3>Component 기본 구조</h3>
-   ```javascript
-      function Welcome(props) {
+   ```javascript function Welcome(props) {
          return <h1>Hello, {props.name}</h1>;
-      }
-   ```
+      }```
    <ul>
       <li>함수형 컴포넌트</li>
       <li>클래스형 컴포넌트</li>
