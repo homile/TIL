@@ -54,7 +54,7 @@
    </ul>
 </p>
 <pre>
-   <code>
+   <code language='javascript'>
       function Welcome(props) {
          return Hello, {props.name};
       }
