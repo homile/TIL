@@ -16,7 +16,7 @@
    <h3>Component 기본 구조</h3>
    <ul>
       <li>함수형 컴포넌트</li>
-      ```
+      ```JavaScript
       function Welcome(props) {
          return <h1>Hello, {props.name}</h1>;
       }
