@@ -53,10 +53,8 @@
       <li>React 컴포넌트는 자신의 props를 다룰 때 반드시 순수 함수처럼 동작해야 한다.</li>
    </ul>
 </p>
-<pre>
-   <code>
-      <sapn>function Welcome(props) {</span>
-         <span>return <h1>Hello, {props.name}</h1>;</span>
-      }
-   </code>
-</pre>
+```javascript
+function test() {
+ console.log("look ma’, no spaces");
+}
+```
