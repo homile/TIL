@@ -55,7 +55,7 @@
 </p>
 <pre>
    <code>
-      function Welcome(props) {
+      <sapn>function Welcome(props) {</span>
          return Hello, {props.name};
       }
    </code>
