@@ -46,6 +46,12 @@
       UI 일부가 자체적으로 복잡한 경우(App, FeedStory, COmment)에는 별도의 컴포넌트를 만드는 게 좋다.</li>
    </ul>
 
+   ```javascript
+   function test() {
+      console.log("look ma’, no spaces");
+   }
+   ```
+
    <h3>Props: 데이터</h3>
    <ul>
       <li>읽기 전용이다.</li>
@@ -53,8 +59,3 @@
       <li>React 컴포넌트는 자신의 props를 다룰 때 반드시 순수 함수처럼 동작해야 한다.</li>
    </ul>
 </p>
-```javascript
-function test() {
- console.log("look ma’, no spaces");
-}
-```
