@@ -17,17 +17,17 @@
    <ul>
       <li>함수형 컴포넌트</li>
       ```
-      'function Welcome(props) {
-      return <h1>Hello, {props.name}</h1>;
-      }'
+      function Welcome(props) {
+         return <h1>Hello, {props.name}</h1>;
+      }
       ```
       <li>클래스형 컴포넌트</li>
       ```
-      'class Welcome extends React.Component {
+      class Welcome extends React.Component {
          render() {
             return <h1>Hello, {this.props.name}</h1>;
          }
-      }'
+      }
       ```
    </ul>
       
