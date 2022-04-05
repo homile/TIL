@@ -52,7 +52,7 @@
       UI 일부가 자체적으로 복잡한 경우(App, FeedStory, COmment)에는 별도의 컴포넌트를 만드는 게 좋다.</li>
    </ul>
 
-   <h3>Props: 데이터(= attribute)</h3>
+   <h1>Props: 데이터(= attribute)</h1>
    <ul>
       <li>읽기 전용이다.</li>
       <li>같은 내용이 반복될 경우에 사용하면 재사용성이 좋다.</li>
@@ -89,7 +89,7 @@
       <li>한개의 파일에 다수의 컴포넌트가 정의된다면 복잡해지기 때문에 분리해준다.</li>
    </ul>
 
-   <h3>State</h3>
+   <h1>State</h1>
    <ul>
       <li>사용자가 알아서는 안되는 컴포넌트를 내부적으로 사용되는 것(은닉)</li>
       <li>render보다 먼저 실행되는 constructor라는 함수를 작성해 먼저 초기화한다.</li>
