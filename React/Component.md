@@ -21,7 +21,7 @@
    <ul>
       <li>함수형 컴포넌트</li>
       <pre>function Welcome(props) {</pre>
-            <pre>return <h1>Hello, {props.name}</h1>;</pre>
+            <pre>return '<h1>'Hello, {props.name}'</h1>';</pre>
          <pre>}</pre>
       <li>클래스형 컴포넌트</li>
       ```
