@@ -37,8 +37,6 @@
    ```
    </ul>
 
-
-
    <h3>Component 합성</h3>
    <ul>
       <li>자신의 출력에 다른 컴포넌트를 참조할 수 있다.</li>
@@ -54,10 +52,35 @@
       UI 일부가 자체적으로 복잡한 경우(App, FeedStory, COmment)에는 별도의 컴포넌트를 만드는 게 좋다.</li>
    </ul>
 
-   <h3>Props: 데이터</h3>
+   <h3>Props: 데이터(= attribute)</h3>
    <ul>
       <li>읽기 전용이다.</li>
-      <li>순수 함수: 입력값을 바꾸려 하지 않고 항상 동일한 입력값에 대해 동일한 결과를 반환하는 것</li>
-      <li>React 컴포넌트는 자신의 props를 다룰 때 반드시 순수 함수처럼 동작해야 한다.</li>
+      <li>같은 내용이 반복될 경우에 사용하면 재사용성이 좋다.</li>
+
+   ```javascript
+   class Subject extends Component{
+      render(){
+         return (
+            <header>
+               <h1>{this.props.title}</h1>
+               {this.props.sub}
+            </header>
+         );
+      }
+   }
+
+
+   class App extends Component{
+      render(){
+         return (
+            <div className="App">
+               <Subject title="WEB" sub="world wid web!"></Subject>
+            </div>
+         );
+      }
+   }
+   ```
+   <li>순수 함수: 입력값을 바꾸려 하지 않고 항상 동일한 입력값에 대해 동일한 결과를 반환하는 것</li>
+   <li>React 컴포넌트는 자신의 props를 다룰 때 반드시 순수 함수처럼 동작해야 한다.</li>
    </ul>
 </p>
