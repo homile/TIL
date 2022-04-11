@@ -8,6 +8,7 @@
 <ul>
    <li>페이지 개념으로 작성</li>
    <li>placeholder: 값이 입력되지 않았을 경우 출력할 text 입력</li>
+   <li>push 보단 concat을 활용하자.</li>
 </ul>
 
 <br>
