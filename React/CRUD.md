@@ -29,6 +29,8 @@
 <h3></h3>
 <ul>
    <li>페이지 개념으로 작성</li>
+   <li>Read와 Create 기능이 결합되어 있다.</li>
+   <li>form: <a href="https://ko.reactjs.org/docs/forms.html">링크</a></li>
 </ul>
 
 <br>
