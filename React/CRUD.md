@@ -30,6 +30,7 @@
 <ul>
    <li>페이지 개념으로 작성</li>
    <li>Read와 Create 기능이 결합되어 있다.</li>
+   <li>수정할 객체를 복제하고 그것을 수정한다.</li>
    <li>form: <a href="https://ko.reactjs.org/docs/forms.html">링크</a></li>
 </ul>
 

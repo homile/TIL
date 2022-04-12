@@ -46,30 +46,32 @@ class App extends Component{
          _article = <ReadContent title={_content.title} desc={_content.desc}></ReadContent>
       }else if (this.state.mode === 'create'){
          _article = <CreateContent onSubmit={function(_title, _desc){
-            // content 추가
             this.max_content_id = this.max_content_id + 1;
-            // let _contents = this.state.contents.concat(
-            //    {id: this.max_content_id, title:_title, desc:_desc}
-            // );
-            // this.setState(
-            //    {contents:_contents}
-            // );
-            // console.log(_title, _desc);
-            let newContents = Array.from(this.state.contents);
-            newContents.push({id:this.max_content_id, title:_title, desc:_desc});
+            let _contents = Array.from(this.state.contents);
+            _contents.push({id:this.max_content_id, title:_title, desc:_desc});
             this.setState({
-               contents: newContents
+               contents: _contents,
+               mode: 'read',
+               selected_content_id:this.max_content_id
             });
          }.bind(this)}></CreateContent>
       }else if (this.state.mode === 'update'){
          let _content = this.getReadContent();
-         _article = <UpdateContent data={_content} onSubmit={function(_title, _desc){
-            this.max_content_id = this.max_content_id + 1;
-            let newContents = Array.from(this.state.contents);
-            newContents.push({id:this.max_content_id, title:_title, desc:_desc});
-            this.setState({
-               contents: newContents
-            });
+         _article = <UpdateContent data={_content} onSubmit={
+            function(_id, _title, _desc){
+               let _contents = Array.from(this.state.contents);
+               let i = 0;
+               while (i < _contents.length){
+                  if(_contents[i].id === _id){
+                     _contents[i] = {id:_id, title:_title, desc:_desc};
+                     break;
+                  }
+                  i = i + 1;
+               }
+               this.setState({
+                  contents: _contents,
+                  mode: 'read'
+               });
          }.bind(this)}></UpdateContent>
 
       }
