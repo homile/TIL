@@ -1,5 +1,7 @@
 # React
-React는 페이스북(現 meta)의 UI(User Interface)를 더 잘 만들기위해 페이스북에서 만든 자바스크립트 UI라이브러리이다.
+> React는 페이스북(現 meta)의 UI(User Interface)를 더 잘 만들기위해 페이스북에서 만든 JavaScript UI라이브러리이다.   
+사용자 인터페이스를 구축하기 위한 선언적이고 효율적이며 유연한 JavaScript 라이브러리이다.   
+**컴포넌트**라는 작고 고립된 코드의 파편을 이용하여 복잡한 UI를 구성하도록 돕는다.
 
 ### Component: 사용자가 정의한 태그
 * 가독성을 획기적으로 높일 수 있다.
@@ -8,7 +10,14 @@ React는 페이스북(現 meta)의 UI(User Interface)를 더 잘 만들기위해
 
 </br>
 
-### 주요 기능?
+### JSX?
+* JavaScriptXml로 JavaScript에 XML을 추가한 문법이다.
+* 공식적인 JavaScript 문법은 아니다.
+* 공식문서 : [링크](https://ko.reactjs.org/docs/introducing-jsx.html)
+
+</br>
+
+### 자주 사용하는 용어
 
 * **immutuable**: 배열 객체를 불변적으로 다루기 위한 라이브러리
 * **router**: URL에 따라 적당한 컴포넌트가 실행되게 할 수 있다.
